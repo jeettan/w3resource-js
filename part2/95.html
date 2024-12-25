@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function replacefive(arr) {
+
+    let numberToReplace = 3;
+    let newNumber = 5;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === numberToReplace) {
+        arr[i] = newNumber;
+      }
+    }
+
+    return arr;
+
+  }
+
+  console.log(replacefive([3, 4, 7, 5]))
+  console.log(replacefive([3, 3, 9, 8, 3, 4, 5]))
+
+</script>
+
+<body></body>
+
+</html>

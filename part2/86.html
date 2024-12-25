@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function givenangle(answer) {
+
+    switch (true) {
+
+      case (answer > 0 && answer < 90):
+
+        console.log("ACUTE ANGLE")
+        break;
+
+      case (answer == 90):
+        console.log("90 DEGREE ANGLE");
+        break;
+
+
+      case (answer > 90 && answer < 180):
+
+        console.log("OBTUSE ANGLE")
+        break;
+
+      case (answer == 180):
+        console.log("STRAIGHT ANGLE");
+        break;
+
+    }
+
+  }
+
+  givenangle(47);
+
+</script>
+
+<body></body>
+
+</html>

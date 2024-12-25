@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function greatestelement(array, k) {
+
+    array.sort(function (a, b) { return a - b });
+
+    console.log(array)
+
+    return array[array.length - k];
+
+  }
+
+  console.log(greatestelement([1, 2, 6, 4, 5], 3));
+  console.log(greatestelement([-10, -25, -47, -36, 0], 1));
+
+</script>
+
+<body></body>
+
+</html>

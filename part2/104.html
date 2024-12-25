@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function absolutediff(array, n) {
+
+    const givenint = n;
+    var max = 0;
+    var index;
+    var count = 1;
+
+    for (i = 0; i < array.length; i++) {
+
+      for (j = 0; j < array.length; j++) {
+
+        if (j == i) {
+
+          continue;
+        }
+
+        var result = Math.abs(array[i] - array[j]);
+
+        if (result > max && result <= n) {
+
+          max = result;
+        }
+
+      }
+
+    }
+
+    console.log(max)
+
+  }
+
+  absolutediff([12, 10, 33, 34], 10);
+  absolutediff([12, 10, 33, 34], 24);
+  absolutediff([12, 10, 33, 44], 40);
+
+</script>
+
+<body></body>
+
+</html>

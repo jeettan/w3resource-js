@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function maxdigit(int) {
+
+    int = String(int);
+
+    const array = []
+    var z = int.length - 1;
+
+    if (int.length == 2 || int.length == 1) {
+
+      z = int.length;
+    }
+
+    for (i = 0; i < z; i++) {
+
+      var result = int.substring(0, i) + int.substring(i + 1, int.length);
+
+      array.push(result)
+
+    }
+
+    var max = 0;
+
+    for (i = 0; i < array.length; i++) {
+
+      if (array[i] > max) {
+
+        max = array[i]
+
+      }
+
+    }
+
+    console.log(max)
+
+  }
+
+  maxdigit(10);
+  maxdigit(100);
+  maxdigit(1245);
+
+
+</script>
+
+<body></body>
+
+</html>

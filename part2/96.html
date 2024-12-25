@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function consecsum(arr) {
+
+    const push = [];
+
+    for (i = 0; i < arr.length - 1; i++) {
+
+      var result = Math.abs(arr[i] - arr[i + 1]);
+
+      push.push(result);
+
+    }
+
+    var ans = push.reduce((a, b) => {
+      return a + b;
+    }, 0);
+
+    return ans;
+
+  }
+
+  console.log(consecsum([3, 4, 7, 5]))
+  console.log(consecsum([3, 3, 9, 8, 3, 4, 5]))
+
+</script>
+
+<body></body>
+
+</html>

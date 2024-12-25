@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+  function longestString(array) {
+
+    var newArr = [];
+
+    for (i = 0; i < array.length; i++) {
+
+      newArr.push(array[i].length);
+
+    }
+
+    var longest = Math.max.apply(null, newArr);
+
+    for (i = 0; i < newArr.length; i++) {
+
+      if (longest == newArr[i]) {
+
+        console.log("Longest string:", array[i]);
+        return
+      }
+    }
+
+  }
+
+  longestString(["abcdefghi", 'monster inc', "string"]);
+
+
+</script>
+
+<body></body>
+
+</html>

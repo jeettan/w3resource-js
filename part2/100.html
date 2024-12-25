@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function commonElement(array1, array2) {
+
+    var hasCommonElement = false;
+
+    for (var i = 0; i < array1.length; i++) {
+
+      for (var j = 0; j < array2.length; j++) {
+
+        if (array1[i] == array2[j]) {
+
+          hasCommonElement = true;
+          break;
+        }
+      }
+    }
+
+    console.log(hasCommonElement);
+
+
+  }
+
+  commonElement([3, 4, 5], [9, 8, 9]);
+
+</script>
+
+<body></body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function invert(array) {
+
+    var inversion = 0;
+
+    for (var i = 0; i < array.length; i++) {
+
+      for (var j = i + 1; j < array.length; j++) {
+
+        if (array[i] > array[j]) {
+
+          inversion++;
+
+        }
+
+      }
+
+    }
+
+    console.log(inversion)
+
+  }
+
+  invert([0, 3, 2, 5, 9]);
+  invert([1, 5, 4, 3]);
+  invert([10, 30, 20, -10]);
+
+
+</script>
+
+<body></body>
+
+</html>

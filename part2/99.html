@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function rearrange(string) {
+
+    var givenstring = "Hello";
+
+    if (string.length != givenstring.length) {
+
+      return false;
+    }
+
+    var array = givenstring.split('');
+
+    console.log("FIRST ARRAY", array);
+
+    for (var i = 0; i < string.length; i++) {
+
+      var check = false;
+
+      for (var j = 0; j < array.length; j++) {
+
+        if (array[i] == string[j]) {
+
+          check = true;
+          array[i] = "$";
+          console.log(array);
+          console.log(string)
+          break;
+        }
+
+      }
+
+      if (check == false) {
+
+        return false;
+      }
+
+    }
+
+    //final check
+
+    for (var i = 0; i < array.length; i++) {
+
+      if (array[i] != '$') {
+
+        return false;
+      }
+    }
+
+    console.log(`String matches! ${string} is equal to ${givenstring}`);
+
+    return string;
+
+  }
+
+  console.log(rearrange("Helol"));
+
+
+</script>
+
+<body></body>
+
+</html>

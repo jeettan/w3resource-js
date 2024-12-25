@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function frequent(array) {
+
+    var maxcount = 0;
+    var element;
+
+    for (var i = 0; i < array.length; i++) {
+
+      var count = 0;
+
+      for (var j = 0; j < array.length; j++) {
+
+        if (array[j] == array[i]) {
+
+          count++;
+        }
+      }
+
+      if (count > maxcount) {
+
+        maxcount = count;
+        element = array[i];
+      }
+
+    }
+
+    console.log("ELEMENT WITH MAX COUNT:", element, "which has count:", maxcount);
+
+    return { element, maxcount };
+
+  }
+
+  console.log(frequent([3, 3, 4, 5, 9, 3, 9, 9, 9, 9, 3]));
+  console.log(frequent([3, 3, 4, 7, 5, 9]));
+
+</script>
+
+<body></body>
+
+</html>

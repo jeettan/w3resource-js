@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function sumsingle(input) {
+
+    var count = 0;
+
+
+    while (input > 9) {
+      var newstring = String(input).split('');
+      let newArray = newstring.map(Number);
+
+      newArray = newArray.reduce((a, b) => {
+        return a + b;
+      })
+
+      input = newArray;
+
+      count++
+
+    }
+
+    console.log("Number of times", count);
+  }
+
+
+  sumsingle(156)
+
+
+
+</script>
+
+<body></body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function minimalcase(letter) {
+
+    var uppercase = 0;
+    var lowercase = 0;
+
+    for (var i = 0; i < letter.length; i++) {
+
+      if (letter[i] == letter[i].toUpperCase()) {
+
+        uppercase++;
+      } else if (letter[i] == letter[i].toLowerCase()) {
+
+        lowercase++;
+      }
+
+    }
+
+    if (uppercase > lowercase) {
+
+      return letter.toUpperCase();
+    } else if (lowercase > uppercase) {
+
+      return letter.toLowerCase();
+    } else {
+
+      return letter;
+    }
+
+  }
+
+  console.log(minimalcase("Write"));
+  console.log(minimalcase("PHp"));
+
+
+</script>
+
+<body></body>
+
+</html>

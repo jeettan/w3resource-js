@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+  function nocarry(number, number2) {
+
+
+    number = number.toString().split('');
+    number2 = number2.toString().split('');
+
+    if (number.length != 2 || number2.length != 2) {
+
+      console.log("Numbers length is not 2");
+      return false;
+    }
+
+    for (i = 0; i < number.length; i++) {
+
+      number[i] = Number(number[i]);
+      number2[i] = Number(number2[i]);
+    }
+
+    var second = String(number2[1] + number[1]);
+    var first = String(number2[0] + number[0]);
+    console.log(first)
+    console.log(second)
+
+    var join = first + second;
+
+    console.log(join)
+
+    return join;
+
+  }
+
+  nocarry(34, 55)
+
+  nocarry(45, 24)
+
+
+</script>
+
+<body></body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+  function contain(array) {
+
+    count1 = 0;
+    count2 = 0;
+
+
+    for (x in array) {
+
+      if (array[x] == 30) {
+
+        count1++
+      } else if (array[x] == 40) {
+
+        count2++;
+      }
+    }
+
+    if (count1 == 2 || count2 == 2) {
+
+      console.log("Match!")
+    } else {
+
+      console.log("No match");
+    }
+
+  }
+
+  contain([30, 40, 40, 30]);
+
+  contain([30, 20]);
+
+
+</script>
+
+<body></body>
+
+</html>

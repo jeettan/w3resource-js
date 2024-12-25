@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function build_Palindrome(string) {
+
+    var sticky;
+    var base = 1;
+
+    console.log("Your string:", string)
+
+    for (let count = 0; count < string.length; count++) {
+
+      base = 1;
+      let j = string.length - 1;
+      let z = ((string.length - count) / 2) + count;
+
+      for (let i = count; i < z; i++) {
+
+        if (string[i] != string[j]) {
+          base = 0;
+          break;
+        }
+        j--;
+      }
+
+      //JAVA
+
+      if (base == 1) {
+
+        var result = string.substr(count, string.length);
+        var sticky = result;
+        break;
+      }
+    }
+
+    console.log("STICKY:", sticky);
+
+    let index = string.indexOf(sticky);
+    let sub = string.substr(0, index)
+
+    sub = sub.split('').reverse().join('');
+
+    let newstr = string + sub;
+
+    return newstr;
+  }
+
+  console.log(build_Palindrome('KALLA'));
+  console.log(build_Palindrome('JAVA'));
+  console.log(build_Palindrome('122'));
+
+
+  //expected output - AVA
+
+
+
+</script>
+
+<body></body>
+
+</html>

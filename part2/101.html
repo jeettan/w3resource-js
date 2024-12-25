@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body></body>
+
+<script>
+
+  function latin(string) {
+
+    for (var i = 0; i < string.length; i++) {
+
+      if (string[i] == 'J' || string[i] == 'U' || string[i] == 'W' || string[i] == 'j' || string[i] == 'u' || string[i] == 'w') {
+
+        console.log("not a latin letter");
+        return false;
+      }
+
+      if (i < string.length - 1) {
+
+        if (string[i] == string[i].toUpperCase() && string[i + 1] == string[i + 1].toUpperCase()) {
+
+          console.log("Uppercase colition");
+          return false;
+        }
+
+        if (string[i] == string[i].toLowerCase() && string[i + 1] == string[i + 1].toLowerCase()) {
+
+          console.log("lowercase collition");
+          return false;
+        }
+      }
+
+    }
+
+    console.log("accepted");
+    return true;
+  }
+
+  latin("AlPhAbEt")
+  latin("CaBiN")
+  console.log(latin('xYr'));
+  console.log(latin('XXyx'));
+  latin("jacky")
+
+</script>
+
+<body></body>
+
+</html>
