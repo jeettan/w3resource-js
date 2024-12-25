@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+
+</body>
+
+
+<script>
+
+function setThree(int1, int2, int3){
+
+    if((int1 == int2) && (int2 == int3)){
+
+        return 30;
+    } else if((int1 == int2) || (int2 == int3) || (int1 == int3)){
+        
+        return 40;
+    } else{
+
+        return 20;
+    }
+
+}
+
+console.log(setThree(10,10,10))
+console.log(setThree(10,10,30))
+console.log(setThree(10,30,30))
+console.log(setThree(10,33,290))
+
+
+
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body></body>
+
+  <script>
+    function oddString(string) {
+      if (string.length % 2 != 0) {
+        var ruemton = Math.floor(string.length / 2);
+
+        var slice = string.slice(ruemton - 1, ruemton - 1 + 3);
+
+        console.log(slice);
+      }
+    }
+
+    oddString("Fifty");
+  </script>
+
+  <body></body>
+</html>

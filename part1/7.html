@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+function isSunday(year) {
+
+    var days = ["Sunday", "Monday", "Tuesday", "Wedsnesday", "Thursday", "Friday", "Saturday "]
+    
+    var date = new Date(year, 0, 1)
+
+    var answer = days[date.getDay()]
+
+    if(answer == "Sunday"){
+
+        console.log("Yes")
+    } else {
+
+        console.log("No")
+    }
+
+}
+
+isSunday(2017)
+isSunday(2023)
+isSunday(2034)
+isSunday(2040)
+isSunday(2041)
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

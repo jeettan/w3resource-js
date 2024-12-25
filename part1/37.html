@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+
+</body>
+
+
+<script>
+
+function convertCharacter(characters){
+
+    let x = characters.substr(0,3).toLowerCase();
+    let length = characters.length;
+
+    
+
+    if(length >3 ){
+
+        characters = characters.slice(3);
+        characters = x.concat(characters);
+        console.log(characters);
+    } else {
+
+        characters = characters.toUpperCase();
+        console.log(characters);
+
+    }
+    
+
+}
+
+
+convertCharacter("HELlo world")
+convertCharacter("MR JEET")
+convertCharacter("elo")
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

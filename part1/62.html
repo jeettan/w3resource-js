@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body></body>
+
+  <script>
+    function moveLastThree(string) {
+      if (string.length >= 3) {
+        let newString = string.slice(-3);
+
+        string = string.slice(0, -3);
+        string = newString + string;
+
+        console.log(string);
+      }
+    }
+
+    moveLastThree("Javascript");
+  </script>
+
+  <body></body>
+</html>

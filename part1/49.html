@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+
+//Function to shirt the string n places down
+function shiftString(str, N) {
+   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+   const shiftedStr = str.replace(/[a-z]/gi, (match) => {
+      const lowercase = match.toLowerCase();
+      const currentIndex = alphabet.indexOf(lowercase);
+      const newIndex = (currentIndex + N) % 26; // Wrapping around the alphabet
+      const shiftedChar = alphabet[newIndex];
+      return (lowercase === match) ? shiftedChar : shiftedChar.toUpperCase();
+   });
+   return shiftedStr;
+}
+
+const inputString = 'Hello world';
+const shiftedString = shiftString(inputString, 1);
+console.log(shiftedString);
+
+
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+
+function changehoursminute(minutes_input){
+
+var hours = Math.floor(minutes_input / 60);
+var minutes = 0;
+
+if(minutes_input % 60 != 0){
+
+    minutes = minutes_input % 60;
+
+}
+
+console.log("You have " + hours + " hour and " + minutes + " minutes");
+
+}
+
+changehoursminute(240);
+changehoursminute(80);
+changehoursminute(90);
+changehoursminute(95);
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+
+function ABcheck(string){
+
+    string = string.split('');
+
+    for(i=0;i<string.length;i++){
+
+        if(string[i] == 'a' || string[i] == 'b'){
+        if(string[i+4] == 'a' || string[i+4] == 'b'){
+
+            console.log("Match found at index " + i + " letter: " + string[i+4]);
+            return true;
+        }
+    }
+}
+
+console.log("No match")
+
+}
+
+ABcheck("Chainsbreak");
+ABcheck("pane borrowed");
+ABcheck("abCheck");
+
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

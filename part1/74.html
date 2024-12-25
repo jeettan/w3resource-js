@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body></body>
+
+  <script>
+    function reverse(k) {
+      var length = k.length;
+      var largest;
+      var newArray = [];
+
+      if (k[0] > k[length - 1]) {
+        largest = k[0];
+      } else if (k[length - 1] > k[0]) {
+        largest = k[length - 1];
+      } else {
+        largest = k[0];
+      }
+
+      for (i = 0; i < length; i++) {
+        newArray[i] = largest;
+      }
+
+      document.write(newArray + "<br>");
+    }
+
+    var k = [3, 44, 5];
+    var b = [99, 45, 3];
+    var c = [44, 44, 55];
+
+    reverse(k);
+    reverse(b);
+    reverse(c);
+  </script>
+
+  <body></body>
+</html>

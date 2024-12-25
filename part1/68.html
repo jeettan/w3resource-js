@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body></body>
+
+  <script>
+    function createnewstring(string, n) {
+      if (string.length > n) {
+        var givenstring =
+          string.substr(0, 1) + string.substr(string.length - n, string.length);
+
+        return givenstring;
+      }
+    }
+
+    console.log(createnewstring("Jeet Qi Tan", 3));
+    console.log(createnewstring("Job Stewards", 3));
+  </script>
+
+  <body></body>
+</html>

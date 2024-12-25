@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+
+</body>
+
+
+<script>
+
+function greaterThan(int1, int2, int3){
+
+    if(int1 >= 20 && (int1<int2 || int1<int3) || (int2 >= 20 && (int2<int1 || int2<int3)) || (int3 >= 20 && (int3<int1 || int3<int2))){
+
+        console.log("condition met")
+        return true;
+
+    } else {
+
+        console.log("condition not met");
+        return false;
+    }
+
+}
+
+
+greaterThan(23, 45, 10);
+greaterThan(23, 23, 10);
+greaterThan(21, 66, 75);
+
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+
+function copycond(string){
+
+    if(string.length>3){
+
+    var last3 = string.substr(-3, 3);
+    var answer = "";
+
+    for(i=0;i<4;i++){
+
+        answer = answer + last3;
+
+    }
+
+    document.write(answer);
+
+} else{
+
+    return false;
+}
+    
+}
+
+copycond("Python 3.0")
+copycond("JS")
+copycond("Javascript")
+
+
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

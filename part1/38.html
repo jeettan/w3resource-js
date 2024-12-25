@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+
+</body>
+
+
+<script>
+
+function evaluate(marks, finalexam){
+
+    if(marks>= 89 && marks <= 100){
+
+        console.log("A+ grade");
+        return true;
+    } else if(finalexam == 'true' && marks>=90){
+
+        console.log("A+ grade");
+        return true;
+    } else{
+
+        console.log("Other grade");
+        return false;
+    }
+
+
+}
+
+evaluate(100);
+evaluate(80, true);
+evaluate(90, true);
+
+evaluate(89, true);
+evaluate(77, false);
+evaluate(88, false);
+
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

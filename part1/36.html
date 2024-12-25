@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+
+</body>
+
+
+<script>
+
+function checkPositive(digits){
+
+    digits = digits.toString();
+    var strlen = digits.length;
+
+    var x = digits.substr(-1, 1);
+    var y = digits.substr(-2,1);
+    var z = digits.substr(-3,1);
+
+    console.log(x)
+    console.log(y)
+    console.log(z)
+
+
+    if(x == y && x == z && y == z){
+
+        console.log("Last three digits are the same")
+    } else {
+
+        console.log("Last three digits are not the same")
+    }
+
+}
+
+checkPositive(9393475);
+checkPositive(521837129973129);
+checkPositive(52183712937123334);
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

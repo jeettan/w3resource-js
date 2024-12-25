@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+
+</body>
+
+
+<script>
+
+function rightMostDigit(int1, int2, int3){
+
+    int1 = String(int1).substr(-1);
+    int2 = String(int2).substr(-1);
+    int3 = String(int3).substr(-1);
+
+    if(int1 == int2 || int2 == int3 || int3 == int1){
+
+        console.log( int1 + " is the right digit and they are all the same");
+    } else {
+
+        console.log("No similair right digit");
+    }
+
+}
+
+
+rightMostDigit(33, 993, 34753);
+
+
+</script>
+
+<body>
+
+
+</body>
+
+
+</html>

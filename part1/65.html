@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body></body>
+
+  <script>
+    function testScript(string) {
+      if (string.length >= 6) {
+        if (string.slice(string.length - 6, string.length) == "Script") {
+          console.log("Contains script!");
+        } else {
+          console.log("does not contain script");
+        }
+      }
+    }
+
+    testScript("JavaScript");
+    testScript("typeScript");
+    testScript("JavajavaScript");
+    testScript("Python");
+  </script>
+
+  <body></body>
+</html>

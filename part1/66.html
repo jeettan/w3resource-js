@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body></body>
+
+  <script>
+    function sanFra(string) {
+      if (string.substr(0, 3) == "Los" || string.substr(0, 3) == "New") {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    console.log(sanFra("New York"));
+
+    console.log(sanFra("New England"));
+    console.log(sanFra("Los Angeles"));
+    console.log(sanFra("Thailand"));
+  </script>
+
+  <body></body>
+</html>

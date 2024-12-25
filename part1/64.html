@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body></body>
+
+  <script>
+    function walaologic(string, string2) {
+      if (string.length != string2.length) {
+        if (string.length > string2.length) {
+          var remove = string.length - string2.length;
+
+          string = string.slice(remove, string.length);
+
+          return string + string2;
+        } else {
+          var remove = string2.length - string.length;
+
+          string2 = string2.slice(remove, string2.length);
+
+          return string + string2;
+        }
+      } else {
+        return string + string2;
+      }
+    }
+
+    console.log(walaologic("Python", "JS"));
+    console.log(walaologic("ab", "cdef"));
+  </script>
+
+  <body></body>
+</html>

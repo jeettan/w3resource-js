@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    let d = new Date()
+    let hours = d.getHours()
+    let minutes = d.getMinutes()
+    var pmam = (hours>=12) ? "PM" : "AM";
+    document.write("Today is: " + days[d.getDay()] + "<br>")
+    document.write(hours + ":" + minutes + pmam)
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+
+</html>
